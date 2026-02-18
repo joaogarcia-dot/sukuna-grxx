@@ -1,5 +1,29 @@
 module.exports = {
-  prefix: "!",
-  owner: ["559999999999"],
-  botName: "NAGI BOT"
+  name: "menu",
+  aliases: ["help", "ajuda"],
+  category: "gerais",
+  desc: "Mostra o menu principal",
+  usage: "!menu",
+  react: "🤖",
+
+  async execute(sock, m) {
+
+    const buttons = [
+      { buttonId: ".menugerais", buttonText: { displayText: "📌 Gerais" }, type: 1 },
+      { buttonId: ".menumidia", buttonText: { displayText: "🎨 Mídia" }, type: 1 },
+      { buttonId: ".menuia", buttonText: { displayText: "🧠 IA" }, type: 1 },
+      { buttonId: ".menugrupo", buttonText: { displayText: "👥 Grupo" }, type: 1 },
+      { buttonId: ".menujogos", buttonText: { displayText: "🎮 Jogos" }, type: 1 },
+      { buttonId: ".menuowner", buttonText: { displayText: "👑 Owner" }, type: 1 }
+    ]
+
+    const msg = {
+      text: `🌀 *NAGI BOT* 🌀\n\nSelecione uma categoria abaixo:`,
+      footer: "⚡ Rápido • Modular • Poderoso",
+      buttons,
+      headerType: 1
+    }
+
+    await sock.sendMessage(m.chat, msg)
+  }
 }
