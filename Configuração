@@ -1,0 +1,5 @@
+module.exports = {
+  prefix: "!",
+  owner: ["559999999999"],
+  botName: "NAGI BOT"
+}
