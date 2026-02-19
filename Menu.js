@@ -1,57 +1,35 @@
-// Menu.js (README Style)
-const menu = (prefix, nome, grupo, hora, data) => {
-return `
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com/?font=mono&size=28&duration=4000&color=1E90FF&center=true&vCenter=true&lines=🌀+NAGI+BOT+🌀;🤖+AUTOMAÇÃO+WHATSAPP;⚡+RÁPIDO+E+PODEROSO" />
-</p>
+// 📁 commands/gerais/menu.js
+module.exports = {
+  name: "menu",
+  aliases: ["help", "comandos"],
+  category: "gerais",
+  description: "Mostra o menu de comandos",
 
----
+  execute(sock, msg, _args) {
+    const from = msg.key.remoteJid;
 
-## 👤 NAGL BOT
-- **Usuário:** ${nome}
-- **Grupo:** ${grupo || 'Privado'}
-- **Hora:** ${hora}
-- **Data:** ${data}
+    const menu = `
+⛩️ SUKUNA GRXX BOT ⛩️
+━━━━━━━━━━━━━━━━━━
+📌 GERAIS
+• !menu
+• !ping
+• !info
+• !owner
 
----
+🤖 BOT
+• !sticker
+• !toimg
+• !tts
+• !ia
 
-## 📌 Comandos Gerais
-- \`${prefix}menu\`
-- \`${prefix}ping\`
-- \`${prefix}info\`
-- \`${prefix}owner\`
+👥 GRUPO
+• !ban
+• !kick
+• !add
+━━━━━━━━━━━━━━━━━━
+`.trim();
 
----
-
-## 🤖 Comandos do Bot
-- \`${prefix}sticker\`
-- \`${prefix}toimg\`
-- \`${prefix}tts\`
-- \`${prefix}traduzir\`
-- \`${prefix}ia\`
-
----
-
-## 👥 Comandos de Grupo
-- \`${prefix}add\`
-- \`${prefix}kick\`
-- \`${prefix}promote\`
-- \`${prefix}demote\`
-- \`${prefix}linkgp\`
-
----
-
-## ⚙️ Outros
-- \`${prefix}perfil\`
-- \`${prefix}rank\`
-- \`${prefix}status\`
-
----
-
-<p align="center">
-  ⚡ <b>Nagi Bot</b> • Automação WhatsApp Moderna
-</p>
-`;
+    sock.sendMessage(from, { text: menu });
+  }
 };
-
-module.exports = menu;
