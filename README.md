@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com/?font=mono&size=30&duration=4000&color=02008B&center=true&vCenter=true&lines=🌀+NAGI+BOT+🌀;🔵+AUTOMAÇÃO+WHATSAPP;⚡+RÁPIDO+E+PODEROSO" />
+  <img src="https://readme-typing-svg.herokuapp.com/?font=mono&size=30&duration=4000&color=FF0000&center=true&vCenter=true&lines=🌀+NAGI+BOT+🌀;⚫+AUTOMAÇÃO+WHATSAPP;⚡+RÁPIDO+E+PODEROSO" />
 </p>
 
 <p align="center">
@@ -7,10 +7,10 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/NAGI-BOT-blue?style=for-the-badge&logo=whatsapp">
-  <img src="https://img.shields.io/badge/STATUS-ONLINE-success?style=for-the-badge">
-  <img src="https://img.shields.io/badge/NODEJS-18+-green?style=for-the-badge&logo=node.js">
-  <img src="https://img.shields.io/badge/LICENSE-MIT-purple?style=for-the-badge">
+  <img src="https://img.shields.io/badge/NAGI--BOT-black?style=for-the-badge&logo=whatsapp&logoColor=white">
+  <img src="https://img.shields.io/badge/STATUS-ONLINE-black?style=for-the-badge">
+  <img src="https://img.shields.io/badge/NODEJS-18+-black?style=for-the-badge&logo=node.js&logoColor=white">
+  <img src="https://img.shields.io/badge/LICENSE-MIT-black?style=for-the-badge">
 </p>
 
 ---
